@@ -12,6 +12,7 @@
     width: 359px;
     border-radius: 39px;
     background: #1C1C1C;
+    margin: 20px;
 }
 
 .screenWrapper {
@@ -20,8 +21,40 @@
     border-bottom: 1px solid #D9D9D9;
 }
 
+/* ------------------BUTTONS-----------------------*/
 .buttonsWrapper {
     width: 359px;
     height: 442px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px 5px 5px 10px;
 
 }
+
+.btn {
+    width: 80px;
+    height: 80px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50%;
+    background-color: #6D6D6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.btn.yellow {
+    background-color: #FFB800;
+}
+
+.btn.grey {
+    background-color: #AEAEAE;
+}
+
