@@ -3,7 +3,6 @@ import {Buttons} from "./Buttons";
 import {v1} from "uuid";
 
 
-
 export function Calculator() {
 
     const CalculatorButtons = [
@@ -29,11 +28,14 @@ export function Calculator() {
         {id: v1(), name: '=', className: 'yellow'},
     ]
 
+    const ButtonsOnClickHandler = (id: string) => {
+        console.log(id)
+    }
 
     return (
         <div className={'calculatorWrapper'}>
             <Screen/>
-            <Buttons buttons = {CalculatorButtons} />
+            <Buttons buttons={CalculatorButtons} onClick={ButtonsOnClickHandler}/>
         </div>
     )
 }
