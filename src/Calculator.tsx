@@ -32,7 +32,6 @@ export function Calculator() {
     const [state, setState] = useState('')
 
 
-
     const ButtonsOnClickHandler = (id: string, name: string, buttonClass: string) => {
 
     }
